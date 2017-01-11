@@ -7,13 +7,13 @@
   <parent>
     <groupId>org.wildfly.swarm</groupId>
     <artifactId>config-api-parent</artifactId>
-    <version>0.5.1</version>
+    <version>1.0.1.Final</version>
   </parent>
 
 
   <groupId>org.wildfly.swarm</groupId>
   <artifactId>keycloak-config-api</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>1.0.0.Final-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
