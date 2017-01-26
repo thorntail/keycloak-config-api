@@ -11,7 +11,7 @@
 
 
   <artifactId>keycloak-config-api</artifactId>
-  <version>1.0.1.Final</version>
+  <version>1.0.2.Final-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
@@ -23,7 +23,7 @@
     <connection>scm:git:git@github.com:wildfly-swarm/keycloak-config-api.git</connection>
     <developerConnection>scm:git:git@github.com:wildfly-swarm/keycloak-config-api.git</developerConnection>
     <url>https://github.com/wildfly-swarm/keycloak-config-api</url>
-    <tag>1.0.1.Final</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
