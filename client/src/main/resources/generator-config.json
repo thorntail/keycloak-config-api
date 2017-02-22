@@ -5,8 +5,8 @@
     "user": "admin",
     "pass": "passWord123"
   },
-  "module": "org.wildfly.swarm.configuration.keycloak",
+  "module": "org.wildfly.swarm.configuration.keycloak.client",
   "generatorTargets": [
-      "/subsystem=keycloak-server"
+      "/subsystem=keycloak"
   ]
 }
