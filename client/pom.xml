@@ -43,6 +43,9 @@
               <workingDirectory>${jboss.home}</workingDirectory>
               <executable>${jboss.cli.executable}</executable>
               <arguments>--file=bin/adapter-install-offline.cli</arguments>
+              <environmentVariables>
+                <NOPAUSE>true</NOPAUSE>
+              </environmentVariables>
             </configuration>
           </execution>
           <execution>
