@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -15,6 +16,7 @@
 
   <properties>
     <jboss.home>${project.build.directory}/wildfly-${version.wildfly}</jboss.home>
+    <jboss.cli.executable>./bin/jboss-cli.sh</jboss.cli.executable>
   </properties>
 
   <build>
@@ -22,7 +24,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>1.4.0</version>
+        <version>1.6.0</version>
         <dependencies>
           <dependency>
             <groupId>org.wildfly.swarm</groupId>
@@ -39,8 +41,11 @@
             </goals>
             <configuration>
               <workingDirectory>${jboss.home}</workingDirectory>
-              <executable>./bin/jboss-cli.sh</executable>
+              <executable>${jboss.cli.executable}</executable>
               <arguments>--file=bin/adapter-install-offline.cli</arguments>
+              <environmentVariables>
+                <NOPAUSE>true</NOPAUSE>
+              </environmentVariables>
             </configuration>
           </execution>
           <execution>
@@ -221,4 +226,17 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>cli-extension-profile</id>
+      <activation>
+        <os>
+          <family>windows</family>
+        </os>
+      </activation>
+      <properties>
+        <jboss.cli.executable>bin\jboss-cli.bat</jboss.cli.executable>
+      </properties>
+    </profile>
+  </profiles>
 </project>
