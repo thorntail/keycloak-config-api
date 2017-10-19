@@ -15,7 +15,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <version.keycloak>2.5.4.Final</version.keycloak>
+    <version.keycloak>3.2.1.Final</version.keycloak>
     <version.wildfly-config>1.1.0.Final</version.wildfly-config>
   </properties>
 
