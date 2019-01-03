@@ -15,7 +15,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <version.keycloak>4.7.0.Final</version.keycloak>
+    <version.keycloak>4.8.1.Final</version.keycloak>
     <!-- We cannot use project.parent.version for submodules -->
     <version.wildfly-config>1.6.0</version.wildfly-config>
   </properties>
