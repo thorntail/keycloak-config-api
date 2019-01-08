@@ -6,7 +6,7 @@
   <parent>
     <groupId>io.thorntail</groupId>
     <artifactId>keycloak-config-api-parent</artifactId>
-    <version>1.6.2-SNAPSHOT</version>
+    <version>1.6.2</version>
   </parent>
 
   <artifactId>keycloak-client-config-api</artifactId>
