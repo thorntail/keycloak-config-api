@@ -6,7 +6,7 @@
   <parent>
     <groupId>io.thorntail</groupId>
     <artifactId>config-api-parent</artifactId>
-    <version>1.6.0</version>
+    <version>1.6.1</version>
   </parent>
 
   <artifactId>keycloak-config-api-parent</artifactId>
@@ -17,7 +17,7 @@
   <properties>
     <version.keycloak>4.8.1.Final</version.keycloak>
     <!-- We cannot use project.parent.version for submodules -->
-    <version.wildfly-config>1.6.0</version.wildfly-config>
+    <version.wildfly-config>1.6.1</version.wildfly-config>
   </properties>
 
   <scm>
