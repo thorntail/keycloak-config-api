@@ -6,7 +6,7 @@
   <parent>
     <groupId>io.thorntail</groupId>
     <artifactId>config-api-parent</artifactId>
-    <version>1.6.1</version>
+    <version>1.7.0</version>
   </parent>
 
   <artifactId>keycloak-config-api-parent</artifactId>
@@ -17,7 +17,7 @@
   <properties>
     <version.keycloak>4.8.3.Final</version.keycloak>
     <!-- We cannot use project.parent.version for submodules -->
-    <version.wildfly-config>1.6.1</version.wildfly-config>
+    <version.wildfly-config-api>1.7.0</version.wildfly-config-api>
   </properties>
 
   <scm>
@@ -48,7 +48,7 @@
     <dependency>
       <groupId>io.thorntail</groupId>
       <artifactId>config-api-runtime</artifactId>
-      <version>${version.wildfly-config}</version>
+      <version>${version.wildfly-config-api}</version>
     </dependency>
     <dependency>
       <groupId>org.wildfly.core</groupId>
@@ -63,7 +63,7 @@
     <dependency>
       <groupId>io.thorntail</groupId>
       <artifactId>config-api-generator</artifactId>
-      <version>${version.wildfly-config}</version>
+      <version>${version.wildfly-config-api}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
