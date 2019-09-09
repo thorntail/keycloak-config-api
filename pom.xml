@@ -17,7 +17,7 @@
   <properties>
     <version.keycloak>4.8.3.Final</version.keycloak>
     <!-- We cannot use project.parent.version for submodules -->
-    <version.wildfly-config-api>1.7.0</version.wildfly-config-api>
+    <version.wildfly-config-api>1.8.0</version.wildfly-config-api>
   </properties>
 
   <scm>
