@@ -43,12 +43,8 @@
               </arguments>
               <systemProperties>
                 <systemProperty>
-                  <key>
-                    java.util.logging.SimpleFormatter.format
-                  </key>
-                  <value>%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$-6s
-                    %2$s %5$s%6$s%n
-                  </value>
+                  <key>java.util.logging.SimpleFormatter.format</key>
+                  <value>%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$-6s %2$s %5$s%6$s%n</value>
                 </systemProperty>
               </systemProperties>
             </configuration>
@@ -66,9 +62,7 @@
             </goals>
             <configuration>
               <sources>
-                <source>
-                  ${project.build.directory}/generated-sources
-                </source>
+                <source>${project.build.directory}/generated-sources</source>
               </sources>
             </configuration>
           </execution>
@@ -83,9 +77,7 @@
             <phase>verify</phase>
             <configuration>
               <sourceDirectories>
-                <sourceDirectory>
-                  ${project.build.directory}/generated-sources
-                </sourceDirectory>
+                <sourceDirectory>${project.build.directory}/generated-sources</sourceDirectory>
               </sourceDirectories>
               <configLocation>../checkstyle.xml</configLocation>
               <encoding>UTF-8</encoding>
@@ -137,9 +129,7 @@
             </property>
             <property>
               <name>java.util.logging.SimpleFormatter.format</name>
-              <value>%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$-6s
-                %2$s %5$s%6$s%n
-              </value>
+              <value>%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$-6s %2$s %5$s%6$s%n</value>
             </property>
           </systemProperties>
         </configuration>
