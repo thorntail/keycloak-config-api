@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>keycloak-config-api-parent</artifactId>
-  <version>1.8.2-SNAPSHOT</version>
+  <version>1.9.0</version>
 
   <packaging>pom</packaging>
 
@@ -24,7 +24,7 @@
     <connection>scm:git:git@github.com:thorntail/keycloak-config-api.git</connection>
     <developerConnection>scm:git:git@github.com:thorntail/keycloak-config-api.git</developerConnection>
     <url>https://github.com/thorntail/keycloak-config-api</url>
-    <tag>HEAD</tag>
+    <tag>1.9.0</tag>
   </scm>
 
   <modules>
